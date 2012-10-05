@@ -30,7 +30,7 @@ public class WakeupServlet extends HttpServlet {
 			for (Alarm alarm : alarms) {
 				/* タスクキューに送信サーブレットを登録する */
 				Queue queue = QueueFactory.getQueue("wakeup-queue");
-				queue.add(Builder.withUrl("/tasl/wakeuptask").param("email",
+				queue.add(Builder.withUrl("/task/wakeuptask").param("email",
 						alarm.getEmail()));
 			}
 		} finally {
