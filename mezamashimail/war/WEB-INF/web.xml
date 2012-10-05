@@ -38,5 +38,13 @@
 		<servlet-name>WakeupTask</servlet-name>
 		<url-pattern>/task/wakeuptask</url-pattern>
 	</servlet-mapping>
+<servlet>
+		<servlet-name>Wakeup</servlet-name>
+		<servlet-class>com.appspot.mezamashimail.WakeupServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Wakeup</servlet-name>
+		<url-pattern>/cron/akeup</url-pattern>
+	</servlet-mapping>
 
 </web-app>
